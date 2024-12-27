@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "CanSat")(type "KiCad")(uri "${KIPRJMOD}/CanSat.kicad_sym")(options "")(descr ""))
+)

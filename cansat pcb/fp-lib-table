@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "CanSat")(type "KiCad")(uri "${KIPRJMOD}/CanSat.pretty")(options "")(descr ""))
+)
