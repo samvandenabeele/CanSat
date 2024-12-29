@@ -1,2 +1,7 @@
 cansat-pcb/cansat-pcb-backups/
 cansat-pcb/cansat pcb.svg
+cansat/lib/
+.vscode/
+cansat/.micropico
+cansat.code-workspace
+cansat-pcb/cansat pcb-backups/
