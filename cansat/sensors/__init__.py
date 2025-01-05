@@ -1,3 +1,3 @@
-from sensors.BMP280 import BMP280
-from sensors.RFM69 import RFM69HCW
-from sensors.MPU6050 import MPU6050
+from .bmp280 import BMP280
+from .rfm69 import RFM69HCW
+from .mpu6050 import MPU6050
