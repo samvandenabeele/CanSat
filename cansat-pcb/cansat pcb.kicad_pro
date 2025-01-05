@@ -471,6 +471,42 @@
     [
       "5b536bad-dff4-4fc1-b4ee-d4495f6592c9",
       ""
+    ],
+    [
+      "fbe43f5f-d3a0-454d-ab8e-8a26635c2a09",
+      "BUZZER"
+    ],
+    [
+      "1bb0b848-6afe-42ce-b8d3-d4adf4735815",
+      "SERVO"
+    ],
+    [
+      "87c8de46-ba5a-4d30-bdf0-1bb5217d8599",
+      "BME688"
+    ],
+    [
+      "621abd91-32a6-45ed-91e3-4f9649f56dcd",
+      "RADIO"
+    ],
+    [
+      "2e22a5b5-8262-403a-93fa-240ecba613ca",
+      "GYRO"
+    ],
+    [
+      "feb2cdbd-878b-4ae8-b275-7da52bb53a22",
+      "BATTERY"
+    ],
+    [
+      "477129af-57e3-4b30-853c-284d277e4333",
+      "TEMPERATURE"
+    ],
+    [
+      "8a6476e4-389a-4359-89d0-3134d22b3b23",
+      "CO2 & VOCs"
+    ],
+    [
+      "f1ed4982-a4e6-4fb1-bb7e-e6978714d3dd",
+      "SGP30"
     ]
   ],
   "text_variables": {}
