@@ -12,6 +12,12 @@ class RFM69HCW:
 
 	def transmit(self, data: str) -> bool:
 		return self.rfm.send(bytes(f"{data}\r\n", "utf-8"))
+	
+	def receive(self) -> str:
+		packet = self.rfm.receive()
+		if packet is not None:
+			return str(packet, "utf-8")
+		return ""
 		
 	def dbm_to_mw(self, dbm: float) -> float:
 		"""Convert dBm to mW."""
