@@ -938,23 +938,6 @@
     )
   )
 
-  (sheet (at 49.53 128.27) (size 12.7 3.81) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid f1ed4982-a4e6-4fb1-bb7e-e6978714d3dd)
-    (property "Sheetname" "SGP30" (at 49.53 127.5584 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "SGP30.kicad_sch" (at 49.53 132.6646 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "cansat pcb"
-        (path "/5b536bad-dff4-4fc1-b4ee-d4495f6592c9" (page "10"))
-      )
-    )
-  )
-
   (sheet (at 49.53 40.64) (size 24.13 5.08) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
