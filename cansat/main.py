@@ -28,7 +28,13 @@ while True:
 
         radio.transmit(message)
         print(f"Sent: {message}")
-
-
-        start_time = time.time()
+        if 300 <= elapsed_time_ms < 350:
+            eCO2, tvoc = sgp30_sensor.read_air_quality()
+            print(f"eCO2: {eCO2} ppm, TVOC: {tvoc} ppb")
+            # Optionally send the air quality data over the radio
+            air_quality_message = f"eCO2: {eCO2} ppm, TVOC: {tvoc} ppb"
+            rfm69.transmit(air_quality_message)
+            print(f"Sent: {air_quality_message}")
+        if elapsed_time_ms >= 500:
+            start_time = time.time()
 
