@@ -233,7 +233,11 @@
     (property "Value" "Conn_01x03_Pin" (at 135.89 74.93 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
+<<<<<<< HEAD
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 134.62 73.66 0)
+=======
+    (property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" (at 134.62 73.66 0)
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 73.66 0)
@@ -291,7 +295,11 @@
     (property "Value" "Conn_01x03_Pin" (at 135.89 58.42 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
+<<<<<<< HEAD
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 134.62 57.15 0)
+=======
+    (property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" (at 134.62 57.15 0)
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 57.15 0)
@@ -349,7 +357,11 @@
     (property "Value" "Conn_01x03_Pin" (at 135.89 91.44 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
+<<<<<<< HEAD
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 134.62 90.17 0)
+=======
+    (property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" (at 134.62 90.17 0)
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 90.17 0)

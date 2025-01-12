@@ -203,6 +203,7 @@
         )
       )
     )
+<<<<<< HEAD
     (symbol "Connector:Conn_01x02_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -263,6 +264,8 @@
         )
       )
     )
+=======
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
     (symbol "Switch:SW_DPDT_x2" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (at 0 4.318 0)
         (effects (font (size 1.27 1.27)))
@@ -641,6 +644,16 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 85abcc6c-acdc-417b-8788-5dc7a11a6d66)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.5577 60.96 0)
+<<<<<<< HEAD
+=======
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "I2C1 SDA" (shape input) (at 95.25 86.36 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid ad702ecd-b22d-42a8-a5ca-691e8c0dbd89)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.4353 86.36 0)
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -672,6 +685,16 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+<<<<<<< HEAD
+=======
+  (global_label "I2C1 SCL" (shape input) (at 95.25 88.9 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid f932e388-183d-4359-89da-2fca27139518)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.4958 88.9 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
 
   (symbol (lib_id "CanSat:raspberry pi pico") (at 106.68 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
@@ -790,6 +813,7 @@
     )
   )
 
+<<<<<<< HEAD
   (symbol (lib_id "power:+5V") (at 162.56 93.98 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 695fcc6c-3db6-47ec-8b41-7fc5f451cdfb)
@@ -821,6 +845,14 @@
     (property "Reference" "#PWR02" (at 125.73 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+=======
+  (symbol (lib_id "power:GND") (at 119.38 52.07 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 73d7557d-0fab-4be4-8ba5-184c98734add)
+    (property "Reference" "#PWR02" (at 125.73 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
     (property "Value" "GND" (at 123.19 52.07 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
@@ -874,7 +906,11 @@
     (property "Value" "SW_DPDT_x2" (at 190.5 55.88 0)
       (effects (font (size 1.27 1.27)))
     )
+<<<<<<< HEAD
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 190.5 60.96 0)
+=======
+    (property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" (at 190.5 60.96 0)
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 60.96 0)
@@ -895,6 +931,7 @@
     )
   )
 
+<<<<<<< HEAD
   (symbol (lib_id "power:GND") (at 162.56 96.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c73ca1c8-b4c3-40be-9260-9e91adcf25cb)
@@ -953,6 +990,15 @@
     (property "Sheetname" "SERVO" (at 49.53 62.7884 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
+=======
+  (sheet (at 49.53 63.5) (size 33.02 10.16) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 1bb0b848-6afe-42ce-b8d3-d4adf4735815)
+    (property "Sheetname" "SERVO" (at 49.53 62.7884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
     (property "Sheetfile" "servo.kicad_sch" (at 49.53 74.2446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
@@ -1030,7 +1076,11 @@
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 87c8de46-ba5a-4d30-bdf0-1bb5217d8599)
+<<<<<<< HEAD
     (property "Sheetname" "BMP280" (at 49.53 52.6284 0)
+=======
+    (property "Sheetname" "BME688" (at 49.53 52.6284 0)
+>>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Sheetfile" "BMP280.kicad_sch" (at 49.53 57.7346 0)
