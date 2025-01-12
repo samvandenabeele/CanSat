@@ -6,7 +6,6 @@
 
   (lib_symbols
     (symbol "CanSat:SGP30" (in_bom yes) (on_board yes)
-<<<<<<< HEAD
       (property "Reference" "U" (at 0 1.27 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -14,31 +13,17 @@
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
-=======
-      (property "Reference" "U" (at 6.35 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SGP30" (at 6.35 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "CanSat:SGP30" (at 6.35 1.27 0)
->>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "SGP30_1_1"
-<<<<<<< HEAD
         (rectangle (start 0 0) (end 12.7 -7.62)
-=======
-        (rectangle (start 0 0) (end 11.43 -10.16)
->>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
           (stroke (width 0) (type default))
           (fill (type background))
         )
         (pin input line (at -2.54 -2.54 0) (length 2.54)
-<<<<<<< HEAD
           (name "VIN" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
@@ -56,25 +41,6 @@
         )
         (pin input line (at 15.24 -2.54 180) (length 2.54)
           (name "SDA" (effects (font (size 1.27 1.27))))
-=======
-          (name "SCA" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -2.54 -5.08 0) (length 2.54)
-          (name "SCL" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 6.35 -12.7 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 13.97 -2.54 180) (length 2.54)
-          (name "1V8" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 13.97 -5.08 180) (length 2.54)
-          (name "VIN" (effects (font (size 1.27 1.27))))
->>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
           (number "5" (effects (font (size 1.27 1.27))))
         )
       )
@@ -175,18 +141,13 @@
 
 
   (text_box "SGP30\n50mA\n0x58"
-<<<<<<< HEAD
     (at 133.35 88.9 0) (size 44.45 26.67)
-=======
-    (at 133.35 88.9 0) (size 40.64 26.67)
->>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 3e1bf8dc-d28e-4779-bd2a-e5ae6e3d5830)
   )
 
-<<<<<<< HEAD
   (global_label "I2C0 SCL" (shape input) (at 163.83 101.6 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4e5bebbc-b565-4e9f-bf04-f024afa11c51)
@@ -218,39 +179,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d274269e-5991-438d-8d57-db177cc208a7))
-=======
-  (global_label "I2C0 SDA" (shape input) (at 146.05 99.06 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 11651561-82a8-4ab8-af7d-440ff470a09d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 134.2353 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "I2C0 SCL" (shape input) (at 146.05 101.6 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 357d86b9-0c38-4cff-bdef-bccb912b5957)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 134.2958 101.6 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 154.94 109.22 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 015d5e46-9647-460f-9e5e-925201fbea1c)
-    (property "Reference" "#PWR025" (at 154.94 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 154.94 114.3 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 154.94 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 154.94 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5e077b4a-135b-441f-93a7-ebddb43037ac))
->>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
     (instances
       (project "cansat pcb"
         (path "/5b536bad-dff4-4fc1-b4ee-d4495f6592c9/8a6476e4-389a-4359-89d0-3134d22b3b23"
@@ -260,7 +188,6 @@
     )
   )
 
-<<<<<<< HEAD
   (symbol (lib_id "power:+3V3") (at 146.05 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b06860ab-93e7-4b73-8d26-7bd543c77ef5)
@@ -277,24 +204,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8ee4cf2c-6ca5-4044-a875-2b9308f0908c))
-=======
-  (symbol (lib_id "power:+3V3") (at 162.56 101.6 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6ed2084a-5a72-4a9d-b1a6-f743213621c1)
-    (property "Reference" "#PWR024" (at 158.75 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 166.37 101.6 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 162.56 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 162.56 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a2c0b1c2-844e-4730-b5ff-20cb8f49321b))
->>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
     (instances
       (project "cansat pcb"
         (path "/5b536bad-dff4-4fc1-b4ee-d4495f6592c9/8a6476e4-389a-4359-89d0-3134d22b3b23"

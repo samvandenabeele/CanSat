@@ -166,22 +166,14 @@
     (uuid 71c302fd-69c9-4d92-8c2c-5b5fb8b53a3e)
   )
 
-<<<<<<< HEAD
   (global_label "I2C0 SDA" (shape input) (at 156.21 99.06 0) (fields_autoplaced)
-=======
-  (global_label "I2C1 SDA" (shape input) (at 156.21 99.06 0) (fields_autoplaced)
->>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b0001a2a-7e1b-4f60-8ba1-22c9e555195b)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 168.0247 99.06 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-<<<<<<< HEAD
   (global_label "I2C0 SCL" (shape input) (at 156.21 96.52 0) (fields_autoplaced)
-=======
-  (global_label "I2C1 SCL" (shape input) (at 156.21 96.52 0) (fields_autoplaced)
->>>>>>> 673e45e53089288ec36ae3b7f805afa0fd734616
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f91c637a-fb63-4619-8274-4f4d3462a78b)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.9642 96.52 0)
