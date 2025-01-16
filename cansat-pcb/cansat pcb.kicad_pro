@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.016,
+          "height": 1.778,
+          "width": 1.778
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -50,23 +50,16 @@
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [
-        "lib_footprint_issues|137470000|108530000|38c2c249-fab0-40a6-a0af-bc139d4bbd36|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|161560000|89471850|b20cd35c-ea09-4747-8fe5-16dcc73b9f47|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|137430000|66670000|290884c6-b5c8-4f3c-a7db-f6e7d4c830f1|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|141240000|137690000|b2248852-7c2c-403d-b0c2-2dc2fc3f5106|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|143780000|111539485|5650a705-7ffd-43ed-978d-4b36806398a2|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|176697000|58833000|da01593e-1e38-4f0c-80e9-68bfa7533081|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|128804111|89987149|7bee3b41-1124-42ba-abc5-57889dafc5e1|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|144487725|110577419|b67acb0f-25f4-4a8d-94b0-64442f41eadc|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|161560000|89471850|b20cd35c-ea09-4747-8fe5-16dcc73b9f47|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|174260000|95880000|687b7b36-a030-48fe-a9a9-3983dddd4118|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|129050553|90203440|7bee3b41-1124-42ba-abc5-57889dafc5e1|00000000-0000-0000-0000-000000000000",
         "silk_over_copper|144671118|126104623|c2fe2c22-0ffa-480e-871d-79ee56748eb2|00000000-0000-0000-0000-000000000000",
         "silk_over_copper|155545875|79922577|71f54275-699a-4eb1-8bbf-bd3246934a06|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|169340060|82826000|770e630a-db3d-47fc-ba77-bbdd3efd0071|00000000-0000-0000-0000-000000000000",
-        "silk_overlap|126930000|90235990|7878b8b4-954a-4f71-a7ab-34c66c1e27e3|7bee3b41-1124-42ba-abc5-57889dafc5e1",
-        "silk_overlap|147810533|43873332|27feeaf0-952f-4cd9-b968-99dfa60c8473|74eab3a1-02f4-4998-ab07-b7840d3096f8",
-        "silk_overlap|162469523|110385000|a5f2e126-11a5-4a47-9c95-7b88052377eb|a645d9a2-941a-4a48-b1a2-f8d1c75d7fef",
-        "starved_thermal|128540000|60320000|af0f9ccf-2a82-433a-b79c-af2987cb359e|e5202f9f-a476-4a87-84ba-71f699b777db|B.Cu",
-        "starved_thermal|146320000|73020000|af0f9ccf-2a82-433a-b79c-af2987cb359e|2f67d5d9-c3bf-4084-8499-aa6bc22ffdb6|F.Cu",
-        "starved_thermal|166740000|83715000|af0f9ccf-2a82-433a-b79c-af2987cb359e|0ef72216-5e7e-49fd-ac5a-00a45595ac38|F.Cu",
-        "starved_thermal|174800000|122550000|af0f9ccf-2a82-433a-b79c-af2987cb359e|0e5aa9d7-2a06-486c-b2b7-b90e4025b7bf|B.Cu"
+        "silk_over_copper|169340060|84554126|770e630a-db3d-47fc-ba77-bbdd3efd0071|00000000-0000-0000-0000-000000000000",
+        "silk_overlap|128170000|90075990|7bee3b41-1124-42ba-abc5-57889dafc5e1|7878b8b4-954a-4f71-a7ab-34c66c1e27e3",
+        "silk_overlap|162469523|110385000|a5f2e126-11a5-4a47-9c95-7b88052377eb|a645d9a2-941a-4a48-b1a2-f8d1c75d7fef"
       ],
       "meta": {
         "version": 2
@@ -426,7 +419,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -447,6 +440,40 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "I2C0 SCL",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "I2C0 SDA",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -458,6 +485,10 @@
       {
         "netclass": "+5V",
         "pattern": "+5V"
+      },
+      {
+        "netclass": "I2C0 SCL",
+        "pattern": "RST"
       }
     ]
   },
