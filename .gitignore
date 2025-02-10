@@ -5,3 +5,12 @@ cansat/lib/
 cansat/.micropico
 cansat.code-workspace
 cansat-pcb/cansat pcb-backups/
+can.stl
+lid.stl
+cansat-pcb/fabrication-toolkit-options.json
+cansat-pcb/production/bom.csv
+cansat-pcb/production/cansat_pcb.zip
+cansat-pcb/production/designators.csv
+cansat-pcb/production/positions.csv
+cansat-pcb/production/backups/cansat_pcb_2025-01-25_13-07-49.zip
+cansat-pcb/production/backups/cansat_pcb_2025-01-25_13-08-40.zip

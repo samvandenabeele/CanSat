@@ -1,4 +1,4 @@
-BME688:
+BMP280:
 - I2C adress: 0x77
 - C_max: 1.12 mA
 

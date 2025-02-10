@@ -1,4 +1,4 @@
-24644392038329738
+24646138588441761
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2624,6 +2624,13 @@ RFM69HCW
 0
 15
 15
+CanSat
+SGP30
+
+
+0
+5
+5
 CanSat
 raspberry pi pico
 the raspberry pi pico 2040
