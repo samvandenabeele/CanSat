@@ -1,11 +1,11 @@
-from sensors import BMP280, RFM69HCW, MPU6050, TMP36, sgp30 #importing sensors and radio transmitter
+from sensors import BMP280, RFM69HCW, MPU6050, TMP36, SGP30 #importing sensors and radio transmitter
 import time
 
 
 bmp_sensor = BMP280()
 mpu_sensor = MPU6050()
 tmp_sensor = TMP36()
-sgp_sensor = sgp30()
+sgp_sensor = SGP30()
 radio = RFM69HCW()
 
 start_time = time.time()
@@ -30,11 +30,11 @@ while True:
         radio.transmit(message)
         print(f"Sent: {message}")
         if 300 <= elapsed_time_ms < 350:
-            eCO2, tvoc = sgp30_sensor.read_air_quality()
+            eCO2, tvoc = sgp_sensor.read_air_quality()
             print(f"eCO2: {eCO2} ppm, TVOC: {tvoc} ppb")
             # Optionally send the air quality data over the radio
             air_quality_message = f"eCO2: {eCO2} ppm, TVOC: {tvoc} ppb"
-            rfm69.transmit(air_quality_message)
+            radio.transmit(air_quality_message)
             print(f"Sent: {air_quality_message}")
         if elapsed_time_ms >= 500:
             start_time = time.time()

@@ -2,7 +2,7 @@ from machine import I2C, Pin
 import time
 
 class SGP30:
-    def __init__(self, i2c, address=0x58):
+    def __init__(self, address=0x58):
         """
         Initialize the SGP30 sensor.
 
