@@ -1,4 +1,4 @@
-from sensors import BMP280, RFM69HCW, MPU6050 #importing sensors and radio transmitter
+from sensors import BMP280, RFM69HCW, MPU6050, TMP36, SGP30 #importing sensors and radio transmitter
 import time
 
 
