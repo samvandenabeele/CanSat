@@ -1,10 +1,11 @@
-from sensors import BMP280, RFM69HCW, MPU6050 #importing sensors and radio transmitter
+from sensors import BMP280, RFM69HCW, MPU6050, TMP36, sgp30 #importing sensors and radio transmitter
 import time
 
 
 bmp_sensor = BMP280()
 mpu_sensor = MPU6050()
-
+tmp_sensor = TMP36()
+sgp_sensor = sgp30()
 radio = RFM69HCW()
 
 start_time = time.time()
