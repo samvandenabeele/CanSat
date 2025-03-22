@@ -39,7 +39,7 @@
 
   (setup
     (pad_to_mask_clearance 0)
-    (grid_origin 152.14 59.58)
+    (grid_origin 177.54 135.78)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
       (plot_on_all_layers_selection 0x0000000_00000001)
@@ -1376,8 +1376,11 @@
   (gr_text "5V" (at 164.1 142.87) (layer "F.SilkS") (tstamp 733197d2-777b-4aa6-9e5f-fb204224c154)
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
   )
-  (gr_text "ByteBite" (at 181.888 146.714) (layer "F.SilkS") (tstamp 9ecb90c8-c273-47ff-8d79-826d2735b5df)
-    (effects (font (size 2 2) (thickness 0.4) bold))
+  (gr_text "CanSat\nCanKanjers\nV2.0" (at 187.7 145.178) (layer "F.SilkS") (tstamp 74ee758d-d28b-4c85-8a1d-747cfb82e51b)
+    (effects (font (size 1 1) (thickness 0.2) bold) (justify right bottom))
+  )
+  (gr_text "ByteBite" (at 187.7 146.714) (layer "F.SilkS") (tstamp 9ecb90c8-c273-47ff-8d79-826d2735b5df)
+    (effects (font (size 2 2) (thickness 0.4) bold) (justify right))
   )
 
   (segment (start 152.67 78.896) (end 156.006 78.896) (width 0.25) (layer "F.Cu") (net 1) (tstamp 02fefe4e-a725-4a54-a747-51b294bb373a))
@@ -15114,6 +15117,12 @@
         (xy 176.3 150.27)
         (xy 176.3 100.74)
       )
+    )
+  )
+  (group "" (id 2326a1ff-ea58-45eb-ac90-ccae38486457)
+    (members
+      74ee758d-d28b-4c85-8a1d-747cfb82e51b
+      9ecb90c8-c273-47ff-8d79-826d2735b5df
     )
   )
 )

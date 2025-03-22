@@ -49,21 +49,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        "lib_footprint_mismatch|141756000|137570000|b2248852-7c2c-403d-b0c2-2dc2fc3f5106|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|144296000|111573485|5650a705-7ffd-43ed-978d-4b36806398a2|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|161560000|89471850|b20cd35c-ea09-4747-8fe5-16dcc73b9f47|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|172898000|95379000|687b7b36-a030-48fe-a9a9-3983dddd4118|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|131413357|90733673|7bee3b41-1124-42ba-abc5-57889dafc5e1|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|145187118|126138623|c2fe2c22-0ffa-480e-871d-79ee56748eb2|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|155545875|79922577|71f54275-699a-4eb1-8bbf-bd3246934a06|00000000-0000-0000-0000-000000000000",
-        "silk_overlap|128970000|90269990|7878b8b4-954a-4f71-a7ab-34c66c1e27e3|7bee3b41-1124-42ba-abc5-57889dafc5e1",
-        "silk_overlap|150071819|43772856|27feeaf0-952f-4cd9-b968-99dfa60c8473|74eab3a1-02f4-4998-ab07-b7840d3096f8",
-        "silk_overlap|161107523|109884000|a5f2e126-11a5-4a47-9c95-7b88052377eb|a645d9a2-941a-4a48-b1a2-f8d1c75d7fef",
-        "starved_thermal|130580000|60354000|13d716f5-e5ee-42c4-a03e-3adc5b8247db|e5202f9f-a476-4a87-84ba-71f699b777db|B.Cu",
-        "starved_thermal|155020865|83180000|13d716f5-e5ee-42c4-a03e-3adc5b8247db|34587aa8-a118-4464-b959-c8d31be757ec|F.Cu",
-        "starved_thermal|165378000|83214000|13d716f5-e5ee-42c4-a03e-3adc5b8247db|0ef72216-5e7e-49fd-ac5a-00a45595ac38|F.Cu"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -568,6 +554,43 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "5b536bad-dff4-4fc1-b4ee-d4495f6592c9",
+      ""
+    ],
+    [
+      "fbe43f5f-d3a0-454d-ab8e-8a26635c2a09",
+      "BUZZER"
+    ],
+    [
+      "1bb0b848-6afe-42ce-b8d3-d4adf4735815",
+      "SERVO"
+    ],
+    [
+      "87c8de46-ba5a-4d30-bdf0-1bb5217d8599",
+      "BMP280"
+    ],
+    [
+      "621abd91-32a6-45ed-91e3-4f9649f56dcd",
+      "RADIO"
+    ],
+    [
+      "2e22a5b5-8262-403a-93fa-240ecba613ca",
+      "GYRO"
+    ],
+    [
+      "feb2cdbd-878b-4ae8-b275-7da52bb53a22",
+      "BATTERY"
+    ],
+    [
+      "477129af-57e3-4b30-853c-284d277e4333",
+      "TEMPERATURE"
+    ],
+    [
+      "8a6476e4-389a-4359-89d0-3134d22b3b23",
+      "CO2 & VOCs"
+    ]
+  ],
   "text_variables": {}
 }
