@@ -14,3 +14,10 @@ cansat-pcb/production/designators.csv
 cansat-pcb/production/positions.csv
 cansat-pcb/production/backups/cansat_pcb_2025-01-25_13-07-49.zip
 cansat-pcb/production/backups/cansat_pcb_2025-01-25_13-08-40.zip
+cansat/bmpalt.py
+cansat/bmpslp.py
+cansat/bmptest.py
+cansat/test_config.py
+cansat/test_emitter.py
+cansat/test_receiver.py
+cansat/tmp36.py

@@ -306,8 +306,6 @@
     (uuid b4b8f4af-c652-45e3-aa15-a1dcd601c278)
   )
 
-  (no_connect (at 105.41 74.93) (uuid 6e8169dd-7538-4c43-8f99-3dd4e6e8156c))
-
   (wire (pts (xy 146.05 87.63) (xy 121.92 87.63))
     (stroke (width 0) (type default))
     (uuid 0c6d444b-3ecc-42f1-9af9-2e0195c2c700)
@@ -323,10 +321,6 @@
   (wire (pts (xy 134.62 115.57) (xy 134.62 113.03))
     (stroke (width 0) (type default))
     (uuid 58be44bd-c14c-4a76-ab0d-1dee38b98c4c)
-  )
-  (wire (pts (xy 121.92 87.63) (xy 121.92 115.57))
-    (stroke (width 0) (type default))
-    (uuid 5941bd29-7e77-4350-9f50-c8a4cb368d75)
   )
   (wire (pts (xy 125.73 95.25) (xy 125.73 105.41))
     (stroke (width 0) (type default))
@@ -348,6 +342,10 @@
     (stroke (width 0) (type default))
     (uuid 9f2966a5-b0dc-46bb-9b96-fba1ccb69f95)
   )
+  (wire (pts (xy 121.92 87.63) (xy 121.92 115.57))
+    (stroke (width 0) (type default))
+    (uuid fd0e9f91-9f85-489c-9294-1f63e756b40e)
+  )
 
   (text_box "BATTERY MANAGMENT MODULE"
     (at 99.06 73.66 0) (size 100.33 63.5)
@@ -359,8 +357,8 @@
 
   (global_label "EN_PB" (shape input) (at 153.67 99.06 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 3c86a1a9-0846-441a-856f-52fe11bf176a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 153.67 107.3781 90)
+    (uuid 1e6dd752-77bc-4ef2-a63a-42b8d64c4b96)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 153.67 108.0323 90)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
