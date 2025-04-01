@@ -44,13 +44,6 @@ while True:
 		pass
 	else:
 		# Received a packet!
-		print( "Received (raw bytes):", packet )
 		# And decode to ASCII text
 		packet_text = str(packet, "ascii")
-		data = json.loads(packet_text)
-		print("Received (ASCII):", packet_text)
-		print("-"*40)
-
-		print("Decoded data to json:", data)
-		# Print the data in a readable format
-		print("-"*40)
+		print(packet_text)
