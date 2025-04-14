@@ -20,3 +20,4 @@ cansat/test_config.py
 cansat/test_emitter.py
 cansat/test_receiver.py
 cansat/tmp36.py
+venv/
