@@ -7,7 +7,7 @@ from servo import Servo
 import csv
 import json
 import time
-
+from Kalman import KalmanFilter
 # initialize the sensors
 
 i2c1 = I2C(0, scl=Pin(1), sda=Pin(0), freq=100000)
@@ -28,6 +28,9 @@ mpu6050 = MPU6050(i2c0)
 mpu6050.accel_range = 1
 mpu6050.gyro_range = 1
 bmp280 = BME280(i2c=i2c0, address=BME280_I2CADDR)
+kf_ax = KalmanFilter()
+kf_ay = KalmanFilter()
+kf_az = KalmanFilter()
 alt_baseline = 1032.0
 
 
@@ -51,12 +54,17 @@ def mpu_add_data():
     gyro_y.append(mpu6050.gyro.y)
     gyro_z.append(mpu6050.gyro.z)
 
-    ax = sum(accel_x) / len(accel_x)
-    ay = sum(accel_y) / len(accel_y)
-    az = sum(accel_z) / len(accel_z)
+    ax_raw = sum(accel_x) / len(accel_x)
+    ay_raw = sum(accel_y) / len(accel_y)
+    az_raw = sum(accel_z) / len(accel_z)
     gx = sum(gyro_x) / len(gyro_x)
     gy = sum(gyro_y) / len(gyro_y)
     gz = sum(gyro_z) / len(gyro_z)
+
+    ax = kf_ax.update(ax_raw)
+    ay = kf_ay.update(ay_raw)
+    az = kf_az.update(az_raw)
+
 
     if len(accel_x) > 10:
         accel_x.pop(0)
@@ -66,7 +74,7 @@ def mpu_add_data():
         gyro_y.pop(0)
         gyro_z.pop(0)
 
-    return ax, ay, az, gx, gy, gz
+    return ax, ay, az, gx, gy, gz, ax_raw, ay_raw, az_raw
 
 def is_sorted(lst):
     return all(a <= b for a, b in zip(lst, lst[1:]))
@@ -75,7 +83,7 @@ def is_equal(lst):
     return all(a == b for a, b in zip(lst, lst[1:]))
 
 def process_data():
-    ax, ay, az, gx, gy, gz = mpu_add_data()
+    ax, ay, az, gx, gy, gz, ax_raw, ay_raw, az_raw = mpu_add_data()
     temp, press, hum = bmp280.raw_values
     alt = (alt_baseline - press) * 8.3
     sgp30.set_iaq_rel_humidity(hum, temp)
@@ -101,7 +109,7 @@ def process_data():
 
     with open("data.csv", "w") as f:
         writer = csv.writer(f)
-        writer.writerow([temp, press, alt, hum, co2eq, tvoc, ax, ay, az, gx, gy, gz])
+        writer.writerow([temp, press, alt, hum, co2eq, tvoc, ax, ay, az, gx, gy, gz, ax_raw, ay_raw, az_raw])
 
     data = json.dumps({"temp": temp,
                        "press": press,
