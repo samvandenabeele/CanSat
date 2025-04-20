@@ -2,13 +2,17 @@ from adafruit_sgp30 import Adafruit_SGP30
 from rfm69 import RFM69
 from imu import MPU6050
 from bme280 import BME280, BME280_I2CADDR
-from machine import I2C, Pin, SPI
+from machine import I2C, Pin, SPI, UART
 from servo import Servo
 import csv
 import json
 import time
 from Kalman import KalmanFilter
+from microGPS import MicropyGPS
+
 # initialize the sensors
+
+uart = UART(1, baudrate=115200, tx=Pin(21), rx=Pin(22))
 
 i2c1 = I2C(0, scl=Pin(1), sda=Pin(0), freq=100000)
 i2c0 = I2C(1, scl=Pin(9), sda=Pin(8), freq=100000)
@@ -45,6 +49,32 @@ BASESTATION_ID = 100 # ID of the node (base station) to be contacted
 
 rfm = RFM69( spi=spi, nss=nss, reset=rst )
 rfm.frequency_mhz = FREQ
+
+gps = MicropyGPS()
+
+
+def read_gps() -> tuple:
+    timeout = time.ticks_add(time.ticks_ms(), 30000)  # 30 second timeout
+    while time.ticks_diff(timeout, time.ticks_ms()) > 0:
+        if uart.any():
+            c = uart.read(1)
+            try:
+                gps.update(c.decode('utf-8'))
+            except:
+                continue
+
+        if gps.latitude and gps.longitude and gps.fix_stat:
+            lat = gps.latitude[0] + gps.latitude[1] / 60.0
+            lon = gps.longitude[0] + gps.longitude[1] / 60.0
+            if gps.latitude[2] == 'S':
+                lat = -lat
+            if gps.longitude[2] == 'W':
+                lon = -lon
+            return lat, lon
+
+        time.sleep(0.1)
+
+    raise TimeoutError("Failed to get GPS fix within timeout period.")
 
 def mpu_add_data():
     accel_x.append(mpu6050.accel.x)
@@ -88,6 +118,7 @@ def process_data():
     alt = (alt_baseline - press) * 8.3
     sgp30.set_iaq_rel_humidity(hum, temp)
     iaq_data = sgp30.iaq_measure()
+    lat, lon = read_gps()
     if iaq_data is not None:
         co2eq, tvoc = iaq_data
     else:
@@ -109,7 +140,7 @@ def process_data():
 
     with open("data.csv", "w") as f:
         writer = csv.writer(f)
-        writer.writerow([temp, press, alt, hum, co2eq, tvoc, ax, ay, az, gx, gy, gz, ax_raw, ay_raw, az_raw])
+        writer.writerow([temp, press, alt, hum, co2eq, tvoc, ax, ay, az, gx, gy, gz, ax_raw, ay_raw, az_raw, lat, lon])
 
     data = json.dumps({"temp": temp,
                        "press": press,
@@ -122,7 +153,9 @@ def process_data():
                        "az": az,
                        "gx": gx,
                        "gy": gy,
-                       "gz": gz})
+                       "gz": gz,
+                       "lat": lat,
+                       "lon": lon})
 
     rfm.send(node=NODE_ID, data=data.encode('utf-8'))
     return
