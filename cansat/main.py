@@ -7,7 +7,7 @@ from servo import Servo
 import csv
 import json
 import time
-from Kalman import KalmanFilterfrom 
+from Kalman import KalmanFilter
 from microGPS import MicropyGPS
 
 # initialize the sensors
